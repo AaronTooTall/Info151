@@ -15,6 +15,7 @@ html {
   --white: #ffffff;
   --blue: #2AF6FF;
   --purple: #461096;
+  --lightblue: #42B4EE;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -380,6 +381,36 @@ textarea {
 /* =============
     Header
 ============= */
+button {
+  border: none;
+}
+
+.blue-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
 /* =============
     Footer
 ============= */
+/*==================
+        how
+==================*/
+#how div h1 {
+  color: var(--black);
+}
+#how p {
+  color: var(--black);
+}
+#how ul li {
+  display: inline-block;
+  padding: 30px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+}
+#how ul li h2 {
+  color: var(--black);
+}
