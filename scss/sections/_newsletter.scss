@@ -3,5 +3,21 @@
 ============= */
 
 #newsletter{
-    
+    background-color: var(--black);
+    color: var(--white);
+
+    form{
+        padding: 9px;
+        background-color: var(--black);
+        // just for week 4 demo
+        display: inline-block;
+        border-radius: 6px;
+
+        input{
+            border: none;
+        }
+
+
+    }
+
 }
