@@ -400,7 +400,13 @@ textarea {
 ============= */
 #newsletter {
   background-color: var(--black);
+}
+#newsletter h2 {
   color: var(--white);
+  margin-bottom: 20px;
+}
+#newsletter p {
+  color: var(--grey);
 }
 #newsletter form {
   padding: 9px;

@@ -4,7 +4,17 @@
 
 #newsletter{
     background-color: var(--black);
-    color: var(--white);
+    
+    h2{
+        color: var(--white);
+        margin-bottom: 20px;
+    }
+
+    p{
+        color: var(--grey);
+    }
+
+    
 
     form{
         padding: 9px;
