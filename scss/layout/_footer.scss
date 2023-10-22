@@ -1,3 +1,40 @@
 /* =============
     Footer
 ============= */
+
+#footer{
+     background-color: var(--black);
+    
+         h2{
+           color: var(--white);
+           margin-bottom: 20px;
+         }
+
+         p{
+            color: var(--grey);
+         }
+
+         section{
+            h2{
+                margin-bottom: 20px;
+            }
+         }
+
+
+
+        form{
+            padding: 9px;
+            background-color: var(--black);
+            // just for week 4 demo
+            display: inline-block;
+            border-radius: 6px;
+
+            input{
+                border: none;
+            }
+
+
+            }
+           
+
+}
