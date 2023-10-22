@@ -422,29 +422,3 @@ footer #footer-top form {
 footer #footer-top form input {
   border: none;
 }
-
-/* =============
-    Newsletter
-============= */
-footer #footer-top {
-  background-color: var(--black);
-}
-footer #footer-top h2 {
-  color: var(--white);
-  margin-bottom: 20px;
-}
-footer #footer-top p {
-  color: var(--grey);
-}
-footer #footer-top section h2 {
-  margin-bottom: 20px;
-}
-footer #footer-top form {
-  padding: 9px;
-  background-color: var(--black);
-  display: inline-block;
-  border-radius: 6px;
-}
-footer #footer-top form input {
-  border: none;
-}
