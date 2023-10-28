@@ -3,6 +3,23 @@ Hero
 ============== */
 #hero{
     margin-top: 78px;
+    display: flex;
+
+    h1{
+        font-size: rem-calc(50);
+        color: var(--white);
+    };
+
+    p{
+        color: var(--grey);
+    }
+
+    ul{
+        li{
+            font-size: rem-calc(14);
+        }
+
+    }
 
 }
 

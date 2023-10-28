@@ -1,3 +1,43 @@
 /* =============
     Navigation
 ============= */
+
+
+a{
+    text-decoration: none;
+}
+
+nav{
+
+    ul{
+
+        display:flex;
+        justify-content: flex-end;
+
+        li{
+            list-style: none;
+            margin-left: 40px;
+
+            a:link, a:visited{
+                color: var(--grey);
+
+            }
+
+            a:hover, a:active{
+
+            }
+
+            a.blue-link{
+                color: var(--blue);
+            }
+
+
+        }
+
+        .selected{
+            color: var(--blue);
+        }
+
+        
+    }
+}
