@@ -1,3 +1,29 @@
 /* =============
     Navigation
 ============= */
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    ul{
+        //display:flex;
+        li{
+            display:flex;
+
+
+            a:link, a:visited{
+                color: var(--gray);
+            }
+
+            a:hover, a.active{
+
+            }
+
+            .selected{
+                color: var(--green);
+            }
+        }
+    }
+}
