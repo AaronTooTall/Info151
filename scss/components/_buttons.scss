@@ -3,6 +3,7 @@
 ============= */
 button{
     border: none;
+    cursor: pointer;
 }
 
 .blue-btn{
@@ -10,6 +11,11 @@ button{
     color: var(--white);
     padding: 15px 30px;
     border-radius: 6px;
+}
+
+.blue-btn:hover{
+    background-color: var(--green);
+    color: var(--white);
 }
 
 .demoblue-btn{

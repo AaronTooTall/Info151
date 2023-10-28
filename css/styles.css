@@ -16,6 +16,7 @@ html {
   --blue: #2AF6FF;
   --purple: #461096;
   --grey:	#D3D3D3;
+  --green: #00ff00;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -363,6 +364,7 @@ ul {
 ============= */
 button {
   border: none;
+  cursor: pointer;
 }
 
 .blue-btn {
@@ -370,6 +372,11 @@ button {
   color: var(--white);
   padding: 15px 30px;
   border-radius: 6px;
+}
+
+.blue-btn:hover {
+  background-color: var(--green);
+  color: var(--white);
 }
 
 .demoblue-btn {
@@ -458,4 +465,10 @@ Hero
 }
 #hero ul li {
   font-size: 0.875rem;
+}
+#hero #hero-h1 {
+  margin-bottom: 25px;
+}
+#hero #hero-p {
+  margin-bottom: 35px;
 }
