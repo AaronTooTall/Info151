@@ -394,6 +394,7 @@ ul {
   display: inline-block;
   width: 60px;
   height: 34px;
+  margin: 20px;
 }
 
 /* Hide default HTML checkbox */
@@ -484,10 +485,10 @@ button {
 .blue-btn {
   background-color: var(--blue);
   color: var(--white);
-  padding: 15px 30px;
+  padding: 15px 12px;
   border-radius: 5px;
-  margin-bottom: 50px;
-  border: 69px;
+  margin-top: 40px;
+  border: 40px 69px 50px;
 }
 
 /* =============
@@ -519,9 +520,15 @@ button {
   margin: 181px 0 30px;
 }
 #how #header {
-  text-align: center;
-  padding-top: 30px;
-  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #how ul {
   display: -ms-grid;
@@ -539,14 +546,31 @@ button {
           box-shadow: 0px 30px 50px 0px rgba(3, 3, 37, 0.062745098);
   margin: auto;
   text-align: center;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
 }
 #how ul li div {
   border-radius: 14px;
-  padding: 30px;
+  padding: 0px 0px;
 }
 #how ul li h2 {
   color: var(--black);
+  padding: 5px;
+}
+#how ul li h3 {
+  color: white;
+  font-size: x-large;
+}
+#how ul li h4 {
+  color: white;
+  padding-top: 20px;
+}
+#how ul li h5 {
+  color: black;
+  padding-top: 20px;
 }
 #how ul li p {
   color: var(--grey);
+  font-size: x-small;
+  padding: 10px;
 }
