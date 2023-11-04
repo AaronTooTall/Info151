@@ -4,14 +4,7 @@
 
 footer{
 
-    h2{
-        color: var(--white);
-        margin-bottom: 20px;
-      }
-
-      p{
-         color: var(--grey);
-      }
+    
 
 
 
@@ -19,6 +12,78 @@ footer{
     #footer-top{
         background-color: var(--black);
         padding: 80px 0;
+        display: grid;
+        grid-template-columns: auto 1170px auto;
+        grid-template-areas: ". ftgi .";
+
+
+
+        h2{
+            color: var(--white);
+            margin-bottom: 20px;
+          }
+    
+          p{
+             color: var(--grey);
+          }
+
+
+        #footer-top-grid-item{
+
+            grid-area: ftgi;
+            display: grid;
+            grid-template-columns: 35% 15% 15% auto;
+
+        
+
+            section{
+
+                #social-links{
+                    margin-top: 30px;
+                    display: flex;
+                    li{
+                        margin-left: 6px;
+
+                        a:link, a:visited{
+                            height: 30px;
+                            width: 30px;
+                            border: 1px solid var(--grey);
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 25px;
+                            transition: 0.25s;
+                        }
+
+                        a:hover, a:active{
+                            background-color: var(--green);
+                            color: var(--white);
+                            border: 1px solid var(--green);
+
+                        }
+                    }
+                }
+
+                h1{
+                    margin-bottom: 20px;
+                }
+
+                a:link, a:visited{
+                    color: var(--grey);
+                    transition: 0.25s;
+                    margin-bottom: 10px;
+
+                }
+                a:hover, a:active{
+                    color: var(--green);
+
+                }
+            }
+
+            
+
+        }
         
 
 
@@ -28,7 +93,8 @@ footer{
             background-color: var(--black);
             // just for week 4 demo
             display: inline-block;
-            border-radius: 6px;
+            //border-radius: 6px;
+            border: none;
 
             input{
                 border: none;
@@ -53,6 +119,26 @@ footer{
         background-color: var(--black);
         padding-bottom: 35px;
         text-align: center;
+        display: grid;
+
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+
+        
+        p{
+           padding-top: 30px;
+           color: grey;
+        }
+
+        #footer-bottom-grid-item{
+            align-items: center;
+
+        }
 
     }
 
