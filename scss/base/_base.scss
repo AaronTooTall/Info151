@@ -2,7 +2,29 @@
     Base
 ============= */
 
+body{
+    main{
+        display: flex;
+        display: grid;
+        grid-template-columns: auto 1140 auto;
+        grid-template-areas: ". main-content .";
+
+        #main-grid-item{
+            grid-area: main-content;
+
+        }
+    }
+}
 #validation-btn{
     margin-top: 50px;
     text-align: center;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+
+    li{
+        list-style: none;
+    }
 }
