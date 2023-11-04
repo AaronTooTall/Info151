@@ -3,7 +3,9 @@ Hero
 ============== */
 #hero{
     margin-top: 78px;
-    display: flex;
+    //display: flex;
+    display: grid;
+    grid-template-columns: 37% auto;
 
     h1{
         font-size: rem-calc(50);
@@ -12,6 +14,7 @@ Hero
 
     p{
         color: var(--grey);
+        padding: 10px;
     }
 
     ul{
@@ -29,6 +32,13 @@ Hero
     #hero-p{
         margin-bottom: 35px;
         
+    }
+
+    aside{
+        img{
+            margin-top: -50px;
+            margin-left: 70px;
+        }
     }
 
 }

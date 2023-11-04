@@ -338,6 +338,26 @@ template {
 body {
   background-color: var(--purple);
 }
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". main-grid-item .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
+}
+
+ul li {
+  list-style: none;
+}
+
+#validation-btn {
+  text-align: center;
+}
 
 /* =============
     Typography
@@ -415,6 +435,7 @@ textarea {
 ============= */
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 nav ul {
@@ -424,6 +445,9 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav ul li {
   list-style: none;
@@ -446,6 +470,18 @@ header {
   background-color: var(--purple);
   padding: 15px;
   margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% auto;
+  grid-template-columns: 30% auto;
+}
+header #logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* =============
@@ -456,9 +492,10 @@ Hero
 ============== */
 #hero {
   margin-top: 78px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 37% auto;
+  grid-template-columns: 37% auto;
 }
 #hero h1 {
   font-size: 3.125rem;
@@ -466,6 +503,7 @@ Hero
 }
 #hero p {
   color: var(--grey);
+  padding: 10px;
 }
 #hero ul li {
   font-size: 0.875rem;
@@ -475,4 +513,8 @@ Hero
 }
 #hero #hero-p {
   margin-bottom: 35px;
+}
+#hero aside img {
+  margin-top: -50px;
+  margin-left: 70px;
 }
