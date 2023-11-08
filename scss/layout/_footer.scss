@@ -25,6 +25,7 @@ footer{
     
           p{
              color: var(--grey);
+             padding-top: 20px;
           }
 
 
@@ -94,7 +95,8 @@ footer{
             // just for week 4 demo
             display: inline-block;
             //border-radius: 6px;
-            border: none;
+            border: solid 1px white;
+            height: 50px;
 
             input{
                 border: none;

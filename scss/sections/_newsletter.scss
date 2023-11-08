@@ -4,14 +4,21 @@
 
 #newsletter{
 
+    p{
+        //padding-bottom: 20px;
+    }
+
     form{
-        padding: 9px;
+        margin-top: 20px;
+        padding: 3px;
         background-color: black;
         display: inline-block;
-        border-radius: 6px;
+        border-radius: 3px;
+        border: solid 3px grey;
 
         input{
             border: none;
+            background-color: black;
         }
     }
 }

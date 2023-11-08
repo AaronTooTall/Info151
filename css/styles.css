@@ -447,6 +447,7 @@ footer #footer-top h2 {
 }
 footer #footer-top p {
   color: var(--grey);
+  padding-top: 20px;
 }
 footer #footer-top #footer-top-grid-item {
   -ms-grid-row: 1;
@@ -505,7 +506,8 @@ footer #footer-top form {
   padding: 9px;
   background-color: var(--black);
   display: inline-block;
-  border: none;
+  border: solid 1px white;
+  height: 50px;
 }
 footer #footer-top form input {
   border: none;
@@ -536,11 +538,14 @@ footer #footer-bottom #footer-bottom-grid-item {
     Newsletter
 ============= */
 #newsletter form {
-  padding: 9px;
+  margin-top: 20px;
+  padding: 3px;
   background-color: black;
   display: inline-block;
-  border-radius: 6px;
+  border-radius: 3px;
+  border: solid 3px grey;
 }
 #newsletter form input {
   border: none;
+  background-color: black;
 }
