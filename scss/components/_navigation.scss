@@ -1,3 +1,66 @@
 /* =============
     Navigation
 ============= */
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    ul{
+        display: flex;
+        flex-direction: column;
+        //align-items: end;
+        text-align: right;
+        //padding-top: 20px;
+      
+
+        li{
+            border-bottom: 1px solid grey;
+            //font-weight: 600;
+            //border: 1px solid red;
+
+
+
+            a:link, a:visited{
+                padding: 10px;
+                //border: 1px solid red;
+                display: inline-block;
+                margin-bottom: 12px;
+                margin-top: 12px;
+                color: var(--grey);
+                transition: 0.25s;
+            }
+
+            a:hover, a:active{
+                color:aquamarine;
+
+            }
+
+            .signin-btn{
+                background-color: var(--darkblue);
+                color: var(--white);
+                border-radius: 8px;
+                padding: 16px 24px;
+                //font-weight: 600;
+                width: 17%;
+                text-align: center;
+                vertical-align: middle;
+                //display: inline-block;
+
+            }
+
+            .signup-btn{
+                background-color: var(--white);
+                color: var(--darkblue);
+                border-radius: 8px;
+                padding: 16px 24px;
+                //font-weight: 600;
+                border: 1px solid var(--darkblue);
+                //display: inline-block;
+            
+
+            }
+        }
+    }
+}
