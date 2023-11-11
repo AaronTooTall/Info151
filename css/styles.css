@@ -469,10 +469,6 @@ header {
   grid-area: burger;
 }
 
-#button-container {
-  display: inline;
-}
-
 nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
