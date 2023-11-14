@@ -10,7 +10,19 @@ header{
     "logo burger"
     "nav nav";
 
+
+    @include md{
+        grid-template-columns: 50% auto 4%;
+    }
+   
+    @include xl{
+        grid-template-columns: 25% 25% auto;
+        grid-template-areas:
+        "logo search nav";
+    }
 }
+
+
 
 #logo-container{
     //border: 1px solid red;

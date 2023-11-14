@@ -441,6 +441,19 @@ header {
   grid-template-columns: 90% auto;
       grid-template-areas: "logo burger" "nav nav";
 }
+@media (min-width: 768px) {
+  header {
+    -ms-grid-columns: 50% auto 4%;
+    grid-template-columns: 50% auto 4%;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    -ms-grid-columns: 25% 25% auto;
+    grid-template-columns: 25% 25% auto;
+        grid-template-areas: "logo search nav";
+  }
+}
 
 #logo-container {
   -ms-grid-row: 1;
@@ -474,6 +487,18 @@ nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: nav;
+}
+
+@media (min-width: 1200px) {
+  #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
 }
 
 /* =============

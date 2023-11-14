@@ -134,10 +134,10 @@ html {
         @content;
     }
 }
-//Usage
-// @include lg{
-//     grid-template-columns: repeat(3, 1fr);
-// }
+// //Usage
+//  @include lg{
+//      grid-template-columns: repeat(3, 1fr);
+//  }
 
 
 // Extra large devices
@@ -146,10 +146,10 @@ html {
         @content;
     }
 }
-//Usage
-// @include xl{
-//     grid-template-columns: repeat(4, 1fr);
-// }
+// //Usage
+//  @include xl{
+//      grid-template-columns: repeat(4, 1fr);
+//  }
 
 // Super Extra large devices
 @mixin xxl {
