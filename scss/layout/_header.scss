@@ -3,7 +3,7 @@
 ============= */
 
 header{
-    padding: 22.5px 24px;
+    padding: 5px 10px;
     display: grid;
     grid-template-columns: 90% auto;
     grid-template-areas: 
@@ -16,9 +16,9 @@ header{
     }
    
     @include xl{
-        grid-template-columns: 25% 25% auto;
+        grid-template-columns: 25% auto;
         grid-template-areas:
-        "logo search nav";
+        "logo nav";
     }
 }
 
@@ -39,6 +39,10 @@ header{
     justify-content: flex-end;
     align-items: center;
     grid-area: burger;
+
+    @include xl{
+        display: none;
+    }
 
 }
 

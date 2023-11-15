@@ -388,6 +388,17 @@ a {
   text-decoration: none;
 }
 
+nav {
+  display: none;
+}
+@media (min-width: 1200px) {
+  nav {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+    display: block;
+  }
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,9 +408,29 @@ nav ul {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: right;
+  padding: 5px;
+}
+@media (min-width: 1200px) {
+  nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 nav ul li {
   border-bottom: 1px solid grey;
+}
+@media (min-width: 1200px) {
+  nav ul li {
+    border: none;
+  }
 }
 nav ul li a:link, nav ul li a:visited {
   padding: 10px;
@@ -410,6 +441,11 @@ nav ul li a:link, nav ul li a:visited {
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
+@media (min-width: 1200px) {
+  nav ul li a:link, nav ul li a:visited {
+    margin-bottom: 0px;
+  }
+}
 nav ul li a:hover, nav ul li a:active {
   color: aquamarine;
 }
@@ -418,9 +454,8 @@ nav ul li .signin-btn {
   color: var(--white);
   border-radius: 8px;
   padding: 16px 24px;
-  width: 17%;
-  text-align: center;
-  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 270px;
 }
 nav ul li .signup-btn {
   background-color: var(--white);
@@ -434,7 +469,7 @@ nav ul li .signup-btn {
     Header
 ============= */
 header {
-  padding: 22.5px 24px;
+  padding: 5px 10px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 90% auto;
@@ -449,9 +484,9 @@ header {
 }
 @media (min-width: 1200px) {
   header {
-    -ms-grid-columns: 25% 25% auto;
-    grid-template-columns: 25% 25% auto;
-        grid-template-areas: "logo search nav";
+    -ms-grid-columns: 25% auto;
+    grid-template-columns: 25% auto;
+        grid-template-areas: "logo nav";
   }
 }
 
@@ -481,6 +516,11 @@ header {
           align-items: center;
   grid-area: burger;
 }
+@media (min-width: 1200px) {
+  #burger-container {
+    display: none;
+  }
+}
 
 nav {
   -ms-grid-row: 2;
@@ -496,7 +536,7 @@ nav {
   }
   nav {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 1;
   }
 }
