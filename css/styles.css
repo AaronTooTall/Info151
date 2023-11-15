@@ -361,6 +361,14 @@ h1, h2, h3 {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
 /* =============
     Forms
 ============= */
@@ -384,22 +392,27 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showMainNav {
+  display: block !important;
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
 
-nav {
+#mainNav {
   display: none;
 }
 @media (min-width: 1200px) {
-  nav {
+  #mainNav {
     border: none;
     margin-top: 0;
     padding-top: 0;
     display: block;
   }
 }
-nav ul {
+#mainNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,7 +424,7 @@ nav ul {
   padding: 5px;
 }
 @media (min-width: 1200px) {
-  nav ul {
+  #mainNav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -424,15 +437,15 @@ nav ul {
             align-items: center;
   }
 }
-nav ul li {
+#mainNav ul li {
   border-bottom: 1px solid grey;
 }
 @media (min-width: 1200px) {
-  nav ul li {
+  #mainNav ul li {
     border: none;
   }
 }
-nav ul li a:link, nav ul li a:visited {
+#mainNav ul li a:link, #mainNav ul li a:visited {
   padding: 10px;
   display: inline-block;
   margin-bottom: 12px;
@@ -442,14 +455,14 @@ nav ul li a:link, nav ul li a:visited {
   transition: 0.25s;
 }
 @media (min-width: 1200px) {
-  nav ul li a:link, nav ul li a:visited {
+  #mainNav ul li a:link, #mainNav ul li a:visited {
     margin-bottom: 0px;
   }
 }
-nav ul li a:hover, nav ul li a:active {
+#mainNav ul li a:hover, #mainNav ul li a:active {
   color: aquamarine;
 }
-nav ul li .signin-btn {
+#mainNav ul li .signin-btn {
   background-color: var(--darkblue);
   color: var(--white);
   border-radius: 8px;
@@ -457,7 +470,7 @@ nav ul li .signin-btn {
   margin-right: 10px;
   margin-left: 270px;
 }
-nav ul li .signup-btn {
+#mainNav ul li .signup-btn {
   background-color: var(--white);
   color: var(--darkblue);
   border-radius: 8px;

@@ -2,6 +2,11 @@
     Navigation
 ============= */
 
+.showMainNav{
+    display: block !important;
+    display: block;
+}
+
 a{
     text-decoration: none;
 }
@@ -9,7 +14,7 @@ a{
 
 
 
-nav{
+#mainNav{
     display: none;
 
 
