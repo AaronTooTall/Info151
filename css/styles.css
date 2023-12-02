@@ -400,6 +400,7 @@ button {
   transition: 0.25s;
   color: var(--green);
   border-radius: 8px;
+  margin-left: 20px;
 }
 
 .signup-btn:hover {
@@ -464,13 +465,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  float: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   position: relative;
   list-style-type: none;
 }
+#double-btn ul li {
+  padding-left: 25px;
+}
 
 #mainNav {
-  display: none;
   display: none;
   margin-top: 12px;
   padding-top: 20px;

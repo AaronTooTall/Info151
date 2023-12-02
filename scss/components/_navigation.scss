@@ -15,9 +15,17 @@ a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    float: right;
+    justify-content: flex-end;
+    //float: right;
     position: relative;
     list-style-type:none;
+    //margin-left: 25px;
+
+    ul{
+        li{
+            padding-left: 25px;
+        }
+    }
     
 }
 
@@ -25,7 +33,6 @@ a{
 
 
 #mainNav{
-    display: none;
     display: none;
     margin-top: 12px;
     padding-top: 20px;
