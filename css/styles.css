@@ -466,6 +466,7 @@ a {
           align-items: center;
   float: right;
   position: relative;
+  list-style-type: none;
 }
 
 #mainNav {
@@ -474,6 +475,7 @@ a {
   margin-top: 12px;
   padding-top: 20px;
   border-top: 1px solid var(--gray);
+  list-style-type: none;
 }
 @media (min-width: 1200px) {
   #mainNav {
