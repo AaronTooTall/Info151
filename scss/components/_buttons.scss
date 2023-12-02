@@ -10,7 +10,7 @@ button{
     list-style: none;
 }
 
-.Signin-btn{
+.signin-btn{
     padding: 16px 24px;
     background-color: var(--green);
     transition: 0.25s;
@@ -21,7 +21,7 @@ button{
     //list-style: none;
 }
 
-.Signin-btn:hover{
+.signin-btn:hover{
     background-color: var(--white);
     color: var(--green);
 }
