@@ -19,6 +19,16 @@
             margin-bottom: 24px;
         }
 
+        #sign-in-container{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        button{
+            background-color: var(--greenLight);
+            color: var(--white);
+        }
+
     }
 
 
