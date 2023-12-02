@@ -609,6 +609,7 @@ header {
 #double-btn {
   border: 1px solid red;
   text-decoration: none;
+  grid-area: button;
 }
 
 nav {
@@ -624,12 +625,20 @@ nav {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
+  #double-btn {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
 }
 
 @media (min-width: 1200px) {
   #logo-container {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+  }
+  #double-btn {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
   }
   nav {
     -ms-grid-row: 1;
