@@ -2,20 +2,35 @@
     Sign In
 ============= */
 
-#sign-in{
-    background-color: var(--white) ;
-    height: 50vh;
-    display: flex;
+#sign-in-container{
+
+    //background-color: var(--white) ;
+    background-color: #024A58CC;
+    height: 100vh;
+    //display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
     padding: 16px;
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 20vh;
 
-
+    display: none;
+    
+        
     form{
+        background-color: #024A5850;
+        padding: 24px;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+        #close-button-container{
+        display: flex;
+        margin-bottom: 24px;
+        justify-content: center;
+        }
+
         input{
             width:100%;
             box-sizing: border-box;
@@ -25,18 +40,19 @@
             border-radius: 8px;
         }
 
-        #sign-in-container{
+        #sign-in-button-container{
             display: flex;
             justify-content: flex-end;
-        }
+    
 
-        button{
-            background-color: var(--greenLight);
-            color: var(--white);
+            button{
+                background-color: var(--greenLight);
+                color: var(--white);
+                border: 1px var(--white);
+            }
         }
 
     }
-
 
 
 }

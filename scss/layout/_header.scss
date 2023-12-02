@@ -5,27 +5,28 @@
 header{
     padding: 5px 10px;
     display: grid;
-    grid-template-columns: 90% auto;
+    grid-template-columns: 90% 10%;
     grid-template-areas: 
-    "logo burger"
-    "nav nav";
+    "logo burger";
 
 
     @include md{
-        grid-template-columns: 50% auto 4%;
+        grid-template-columns: 25% auto 4%;
+        grid-template-areas: "logo button burger";
     }
    
     @include xl{
-        grid-template-columns: 25% auto;
+        grid-template-columns: 25% 40% auto;
         grid-template-areas:
-        "logo nav";
+        "logo nav button";
     }
+
 }
 
 
 
 #logo-container{
-    //border: 1px solid red;
+    border: 1px solid red;
     display: flex;
     align-items: center;
     grid-area: logo;
@@ -34,7 +35,7 @@ header{
 }
 
 #burger-container{
-    //border: 1px solid red;
+    border: 1px solid red;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -46,10 +47,20 @@ header{
 
 }
 
+#double-btn{
+    border: 1px solid red;
+    text-decoration: none;
+    //grid-area: button;
+    // @include md{
+    //     display: none;
+    // }
+
+}
+
 
 nav{
     grid-area: nav;
 
-    //border: 1px solid red;
+   // border: 1px solid red;
 
 }
