@@ -377,7 +377,7 @@ button {
   list-style: none;
 }
 
-.green-btn {
+.signin-btn {
   padding: 16px 24px;
   background-color: var(--green);
   -webkit-transition: 0.25s;
@@ -386,12 +386,12 @@ button {
   border-radius: 8px;
 }
 
-.green-btn:hover {
+.signin-btn:hover {
   background-color: var(--white);
   color: var(--green);
 }
 
-.white-btn {
+.signup-btn {
   border: 1px solid var(--green);
   padding: 16px 24px;
   background-color: var(--white);
@@ -401,7 +401,7 @@ button {
   border-radius: 8px;
 }
 
-.white-btn:hover {
+.signup-btn:hover {
   background-color: var(--grey);
   color: var(--white);
 }
@@ -493,6 +493,7 @@ a {
   text-decoration: none;
   text-align: right;
   padding: 5px;
+  list-style-type: none;
 }
 @media (min-width: 1200px) {
   #mainNav ul {
