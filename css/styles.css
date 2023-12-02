@@ -594,7 +594,7 @@ nav {
 #hero {
   background-image: url("../img/hero.jpg");
   background-size: cover;
-  height: 80vh;
+  height: 200vh;
   background-position: center;
 }
 
@@ -614,6 +614,7 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 16px;
+  position: fixed;
 }
 #sign-in form input {
   width: 100%;
@@ -621,4 +622,18 @@ nav {
           box-sizing: border-box;
   height: 60px;
   margin-bottom: 24px;
+  border: none;
+  border-radius: 8px;
+}
+#sign-in form #sign-in-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+#sign-in form button {
+  background-color: var(--greenLight);
+  color: var(--white);
 }
