@@ -337,11 +337,12 @@ template {
     Base
 ============= */
 ul {
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 ul li {
-  list-style: none;
+  list-style-type: none;
 }
 
 #validation-logo {
@@ -512,6 +513,7 @@ a {
 #mainNav ul li {
   border-bottom: 1px solid grey;
   height: 100%;
+  list-style-type: none;
 }
 @media (min-width: 1200px) {
   #mainNav ul li {

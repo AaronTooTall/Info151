@@ -48,6 +48,8 @@ a{
         text-align: right;
         padding: 5px;
         list-style-type:none;
+
+
         @include xl{
             flex-direction: row;
             justify-content: flex-end;
@@ -58,6 +60,7 @@ a{
         li{
             border-bottom: 1px solid grey;
             height: 100%;
+            list-style-type:none;
             //text-decoration: none;
             //font-weight: 600;
             //border: 1px solid red;
