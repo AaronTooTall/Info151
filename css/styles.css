@@ -341,10 +341,6 @@ ul {
   padding: 0;
   margin: 0;
 }
-ul li {
-  list-style-type: none;
-}
-
 #validation-logo {
   text-align: center;
   margin-top: 70px;
@@ -575,7 +571,6 @@ header {
 #logo-container {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,7 +583,6 @@ header {
 #burger-container {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,7 +601,6 @@ header {
 }
 
 #double-btn {
-  border: 1px solid red;
   text-decoration: none;
   grid-area: button;
 }
