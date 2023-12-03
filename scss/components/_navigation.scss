@@ -11,21 +11,7 @@ a{
     text-decoration: none;
 }
 
-#double-btn{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    list-style-type:none;
 
-    ul{
-        li{
-            padding-left: 25px;
-        }
-    }
-    
-}
 
 
 
@@ -90,6 +76,26 @@ a{
                         margin-bottom: 0px;
                     }
             }
+
+            #double-btn{
+                text-decoration: none;
+                //display: flex;
+                display: inline-flex;
+                align-items: center;
+                justify-content: flex-end;
+                position: relative;
+                list-style-type:none;
+            
+                ul{
+                    li{
+                        padding-left: 25px;
+                    }
+                }
+                
+            }
+
+
+
         }
 
     }
