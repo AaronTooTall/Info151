@@ -571,6 +571,7 @@ header {
 #logo-container {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,6 +584,7 @@ header {
 #burger-container {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,12 +603,14 @@ header {
 }
 
 #double-btn {
+  border: 1px solid red;
   text-decoration: none;
   grid-area: button;
 }
 
 nav {
   grid-area: nav;
+  border: 1px solid red;
 }
 
 @media (min-width: 768px) {
