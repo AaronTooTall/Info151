@@ -384,7 +384,7 @@ button {
 }
 
 .signin-btn:hover {
-  background-color: var(--white);
+  background-color: var(--greenLight);
   color: var(--green);
 }
 
@@ -558,6 +558,7 @@ header {
     -ms-grid-columns: 25% auto 4%;
     grid-template-columns: 25% auto 4%;
         grid-template-areas: "logo button burger";
+
   }
 }
 @media (min-width: 1200px) {
@@ -639,6 +640,23 @@ nav {
   }
 }
 
+@media (max-width: 768px) {
+  #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #double-btn {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    display: none;
+  }
+  nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+
+
 /* =============
     Footer
 ============= */
@@ -657,23 +675,22 @@ nav {
 ============= */
 #sign-in-container {
   background-color: rgba(2, 74, 88, 0.8);
-  height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 100%;
   padding: 16px;
   position: fixed;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: none;
 }
 #sign-in-container form {
-  background-color: rgba(2, 74, 88, 0.3137254902);
+  background-color: rgba(2, 74, 88, 0.8);
   padding: 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -684,9 +701,9 @@ nav {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 24px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 #sign-in-container form input {
   width: 100%;
@@ -708,5 +725,5 @@ nav {
 #sign-in-container form #sign-in-button-container button {
   background-color: var(--greenLight);
   color: var(--white);
-  border: 1px var(--white);
+  border: 1px solid var(--white);
 }
