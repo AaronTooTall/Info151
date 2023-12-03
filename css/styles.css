@@ -558,7 +558,6 @@ header {
     -ms-grid-columns: 25% auto 4%;
     grid-template-columns: 25% auto 4%;
         grid-template-areas: "logo button burger";
-
   }
 }
 @media (min-width: 1200px) {
@@ -587,9 +586,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -639,23 +635,6 @@ nav {
     -ms-grid-column: 2;
   }
 }
-
-@media (max-width: 768px) {
-  #logo-container {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  #double-btn {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    display: none;
-  }
-  nav {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-}
-
 
 /* =============
     Footer
