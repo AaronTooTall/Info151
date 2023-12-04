@@ -10,8 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap" rel="stylesheet">
+        <!-- Fancy Apps   -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 8 Modals</title>
+    <title>Week 10 FancyApps</title>
 </head>
 
 <body>
@@ -98,6 +102,52 @@
     <section id="hero"></section>
 
 
+    <section id="fancybox">
+        <div id="fb-grid-item">
+            <h1>Fancybox</h1>
+            <ul>
+                <li>
+                    <a href="img/fancy/akil.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy/akil.jpg" alt="Akil"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy/kids.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy/kids.jpg" alt="Akil"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy/Nikki.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy/Nikki.jpg" alt="Akil"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy/pops.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy/pops.jpg" alt="Akil"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="fancyCarousel">
+        <div id="fc-grid-item">
+            <h1>FancyCarousel</h1>
+            <div class="f-carousel" id="myCarousel">
+
+                <!-- <div class="f-carousel__slide"><img src="img/fancy/akil.jpg" alt="akil"></div>
+                <div class="f-carousel__slide"><img src="img/fancy/kids.jpg" alt="kids"></div>
+                <div class="f-carousel__slide"><img src="img/fancy/Nikki.jpg" alt="nikki"></div>
+                <div class="f-carousel__slide"><img src="img/fancy/pops.jpg" alt="pops"></div> -->
+
+                <div class="f-carousel__slide"><div id="fc-1" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-2" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-3" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-4" class="slide"></div></div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
 
 
     <div id="validation-logo">
@@ -107,6 +157,12 @@
         </a>
     
     </div>
+
+    <!-- FancyBox -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script src="js/scripts-dist.js"></script>
     
