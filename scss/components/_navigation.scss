@@ -4,75 +4,86 @@
 
 .showMainNav{
     display: block !important;
-    display: block;
+    //display: block;
+}
+
+.showSignIn{
+    display: flex !important;
+    justify-content: flex-end;
 }
 
 a{
     text-decoration: none;
 }
 
-#double-btn{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    list-style-type:none;
+// #double-btn{
+//     text-decoration: none;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+//     position: relative;
+//     list-style-type:none;
 
-    ul{
-        li{
-            padding-left: 25px;
-        }
-    }
+//     ul{
+//         li{
+//             padding-left: 25px;
+//         }
+//     }
     
-}
+// }
 
 
 
 
 #mainNav{
     display: none;
-    margin-top: 12px;
-    padding-top: 20px;
-    border-top: 1px solid var(--gray);
-    list-style-type:none;
+    // margin-top: 12px;
+    // padding-top: 20px;
+    // border-top: 1px solid var(--gray);
+    // list-style-type:none;
 
 
-    @include xl{
-        border: none;
-        margin-top: 0;
-        padding-top: 0;
-        display: block;
-    }
+    // @include xl{
+    //     border: none;
+    //     margin-top: 0;
+    //     padding-top: 0;
+    //     display: block;
+    // }
 
 
 
     ul{
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        text-align: right;
-        padding: 5px;
-        list-style-type:none;
+        // display: flex;
+        // flex-direction: column;
+        // text-decoration: none;
+        // text-align: right;
+        // padding: 5px;
+        // list-style-type:none;
 
 
         @include xl{
-            flex-direction: row;
-            justify-content: flex-end;
+            // flex-direction: row;
+            // justify-content: flex-end;
+            // align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 100%;
             align-items: center;
         }
       
 
         li{
             border-bottom: 1px solid grey;
-            height: 100%;
-            list-style-type:none;
+            //height: 100%;
+            //list-style-type:none;
+            text-align: right;
 
             @include xl{
                 border: none;
-                height: 100%;
-                box-sizing: border-box;
-                text-decoration: none;
+                // height: 100%;
+                // box-sizing: border-box;
+                // text-decoration: none;
+                text-align: center;
 
                 
             }
@@ -89,6 +100,10 @@ a{
                     @include xl{
                         margin-bottom: 0px;
                     }
+            }
+
+            a:hover,a:active{
+                color: var(--green);
             }
 
 

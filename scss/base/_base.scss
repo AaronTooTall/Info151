@@ -2,10 +2,18 @@
     Base
 ============= */
 
+.show-signIn-container{
+    display: flex;
+}
+
 ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
+
+    li{
+        list-style: none;
+    }
 }
 
 #validation-logo{

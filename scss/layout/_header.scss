@@ -26,10 +26,12 @@ header{
 
 
 #logo-container{
-    border: 1px solid red;
+    //border: 1px solid red;
     display: flex;
     align-items: center;
     grid-area: logo;
+    padding: 24px 0 0px 24px;
+    height: 100%;
 
 
 }
@@ -47,10 +49,31 @@ header{
 
 }
 
-#double-btn{
-    border: 1px solid red;
-    text-decoration: none;
-    grid-area: button;
+#sign-in-up-buttons{
+    // border: 1px solid red;
+    // text-decoration: none;
+    // grid-area: button;
+    display: none;
+    grid-area: signIn;
+
+    padding: 21px 24px;
+
+    @include md{
+        display: flex;
+        justify-content: flex-end;
+        padding: 24px 0 0;
+        align-items: center;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    @include xl{
+        padding-right: 24px;
+    }
+
+    button{
+        margin-left: 16px;
+    }
 
 }
 
@@ -58,6 +81,6 @@ header{
 nav{
     grid-area: nav;
 
-    border: 1px solid red;
+    //border: 1px solid red;
 
 }

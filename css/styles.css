@@ -336,10 +336,19 @@ template {
 /* =============
     Base
 ============= */
+.show-signIn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+ul li {
+  list-style: none;
 }
 
 #validation-logo {
@@ -447,68 +456,33 @@ textarea {
 ============= */
 .showMainNav {
   display: block !important;
-  display: block;
+}
+
+.showSignIn {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 a {
   text-decoration: none;
 }
 
-#double-btn {
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  position: relative;
-  list-style-type: none;
-}
-#double-btn ul li {
-  padding-left: 25px;
-}
-
 #mainNav {
   display: none;
-  margin-top: 12px;
-  padding-top: 20px;
-  border-top: 1px solid var(--gray);
-  list-style-type: none;
-}
-@media (min-width: 1200px) {
-  #mainNav {
-    border: none;
-    margin-top: 0;
-    padding-top: 0;
-    display: block;
-  }
-}
-#mainNav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-decoration: none;
-  text-align: right;
-  padding: 5px;
-  list-style-type: none;
 }
 @media (min-width: 1200px) {
   #mainNav ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -516,16 +490,12 @@ a {
 }
 #mainNav ul li {
   border-bottom: 1px solid grey;
-  height: 100%;
-  list-style-type: none;
+  text-align: right;
 }
 @media (min-width: 1200px) {
   #mainNav ul li {
     border: none;
-    height: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    text-decoration: none;
+    text-align: center;
   }
 }
 #mainNav ul li a:link, #mainNav ul li a:visited {
@@ -541,6 +511,9 @@ a {
   #mainNav ul li a:link, #mainNav ul li a:visited {
     margin-bottom: 0px;
   }
+}
+#mainNav ul li a:hover, #mainNav ul li a:active {
+  color: var(--green);
 }
 
 /* =============
@@ -572,7 +545,6 @@ header {
 #logo-container {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,6 +552,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   grid-area: logo;
+  padding: 24px 0 0px 24px;
+  height: 100%;
 }
 
 #burger-container {
@@ -603,15 +577,39 @@ header {
   }
 }
 
-#double-btn {
-  border: 1px solid red;
-  text-decoration: none;
-  grid-area: button;
+#sign-in-up-buttons {
+  display: none;
+  grid-area: signIn;
+  padding: 21px 24px;
+}
+@media (min-width: 768px) {
+  #sign-in-up-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 24px 0 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+@media (min-width: 1200px) {
+  #sign-in-up-buttons {
+    padding-right: 24px;
+  }
+}
+#sign-in-up-buttons button {
+  margin-left: 16px;
 }
 
 nav {
   grid-area: nav;
-  border: 1px solid red;
 }
 
 @media (min-width: 768px) {
@@ -623,20 +621,12 @@ nav {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
-  #double-btn {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
 }
 
 @media (min-width: 1200px) {
   #logo-container {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-  }
-  #double-btn {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
   }
   nav {
     -ms-grid-row: 1;
@@ -675,6 +665,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   display: none;
+  height: 100%;
 }
 #sign-in-container form {
   background-color: rgba(2, 74, 88, 0.8);
