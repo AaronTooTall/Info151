@@ -478,6 +478,14 @@ a {
   display: none;
   list-style-type: none;
 }
+@media (min-width: 1200px) {
+  #mainNav {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+    display: block;
+  }
+}
 #mainNav ul {
   list-style-type: none;
 }
