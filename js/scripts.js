@@ -19,7 +19,7 @@ var canYouSeeMainNav = false;
 
 //console.log(burgerBtn);
 
-
+console.log("working");
 //var sectionTags = document.querySelectorAll("section");
 
 
@@ -89,24 +89,24 @@ closeSignUpModalBtn.addEventListener("click",hideSignInModal);
       Sign Up
 -------------------------------*/
 
-// var signUpBtn = document.querySelector("#sign-up-btn");
+var signUpBtn = document.querySelector("#sign-up-btn");
 
-// var signUpContainer = document.querySelector("#sign-up-container");
+var signUpContainer = document.querySelector("#sign-up-container");
 
-// var closeSignUpModalBtn = document.querySelector("#close-sign-up-modal-btn");
+var closeSignUpModalBtn = document.querySelector("#close-sign-up-modal-btn");
 
 
-// function showSignInModal(){
-//     //console.log("show modal now");
+function showSignUpModal(){
+    //console.log("show modal now");
 
-//     signUpContainer.classList.add("show-signUp-container");
-//     mainNav.classList.remove("showMainNav");
-//     signInUpButtons.classList.remove("showSignUp");
-// }
+    signUpContainer.classList.add("show-signUp-container");
+    mainNav.classList.remove("showMainNav");
+    signInUpButtons.classList.remove("showSignUp");
+}
 
-// function hideSignInModal(){
-//     signUpContainer.classList.remove("show-signUp-container");
-// }
+function hideSignUpModal(){
+    signUpContainer.classList.remove("show-signUp-container");
+}
 
-// signUpBtn.addEventListener("click",showSignInModal);
-// closeSignUpModalBtn.addEventListener("click",hideSignInModal);
+signUpBtn.addEventListener("click",showSignUpModal);
+closeSignUpModalBtn.addEventListener("click",hideSignUpModal);
