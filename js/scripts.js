@@ -57,6 +57,9 @@ var signInBtn = document.querySelector("#sign-in-btn");
 
 var signInContainer = document.querySelector("#sign-in-container");
 
+var closeSignUpModalBtn = document.querySelector("#close-sign-up-modal-btn");
+
+
 function showSignInModal(){
     //console.log("show modal now");
 
@@ -64,4 +67,9 @@ function showSignInModal(){
 
 }
 
+function hideSignInModal(){
+    signInContainer.classList.remove("show-signIn-container");
+}
+
 signInBtn.addEventListener("click",showSignInModal);
+closeSignUpModalBtn.addEventListener("click",hideSignInModal);
