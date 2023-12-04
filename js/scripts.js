@@ -84,3 +84,29 @@ function hideSignInModal(){
 
 signInBtn.addEventListener("click",showSignInModal);
 closeSignUpModalBtn.addEventListener("click",hideSignInModal);
+
+/*------------------------------
+      Sign Up
+-------------------------------*/
+
+// var signUpBtn = document.querySelector("#sign-up-btn");
+
+// var signUpContainer = document.querySelector("#sign-up-container");
+
+// var closeSignUpModalBtn = document.querySelector("#close-sign-up-modal-btn");
+
+
+// function showSignInModal(){
+//     //console.log("show modal now");
+
+//     signUpContainer.classList.add("show-signUp-container");
+//     mainNav.classList.remove("showMainNav");
+//     signInUpButtons.classList.remove("showSignUp");
+// }
+
+// function hideSignInModal(){
+//     signUpContainer.classList.remove("show-signUp-container");
+// }
+
+// signUpBtn.addEventListener("click",showSignInModal);
+// closeSignUpModalBtn.addEventListener("click",hideSignInModal);
