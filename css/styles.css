@@ -476,6 +476,10 @@ a {
 
 #mainNav {
   display: none;
+  list-style-type: none;
+}
+#mainNav ul {
+  list-style-type: none;
 }
 @media (min-width: 1200px) {
   #mainNav ul {
@@ -493,6 +497,7 @@ a {
 }
 #mainNav ul li {
   border-bottom: 1px solid grey;
+  list-style-type: none;
   text-align: right;
 }
 @media (min-width: 1200px) {
