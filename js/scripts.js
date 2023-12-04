@@ -10,7 +10,7 @@ var mainNav = document.querySelector("#mainNav");
 
 var burgerBtn = document.querySelector("#burger-container button");
 
-var signInContainer = document.querySelector("#signIn-container");
+var signInUpButtons = document.querySelector("#sign-in-up-buttons");
 
 var canYouSeeMainNav = false;
 
@@ -24,17 +24,18 @@ var canYouSeeMainNav = false;
 function showNav(){
     //console.log("button clicked");
     if(canYouSeeMainNav === false){
+        console.log("show menu");
         //this will add the class of showMainNav to the id mainNav
         mainNav.classList.add("showMainNav");
 
-        signInContainer.classList.add("showSignIn");
+        signInUpButtons.classList.add("showSignIn");
 
         canYouSeeMainNav = true;
     }else{
         console.log("hide menu")
         mainNav.classList.remove("showMainNav");
         //this will remove the class of showMainNav to the id mainNav
-        signInContainer.classList.remove("showSignIn");
+        signInUpButtons.classList.remove("showSignIn");
         canYouSeeMainNav = false;
     }
     
