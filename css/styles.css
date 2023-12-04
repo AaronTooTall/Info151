@@ -558,7 +558,7 @@ header {
   header {
     -ms-grid-columns: 25% auto 40%;
     grid-template-columns: 25% auto 40%;
-        grid-template-areas: "logo nav SignIn";
+        grid-template-areas: "logo nav signIn";
   }
 }
 
@@ -668,6 +668,11 @@ nav {
   #logo-container {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+  }
+  #sign-in-up-buttons {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
   }
   nav {
     -ms-grid-row: 1;
