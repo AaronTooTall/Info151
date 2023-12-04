@@ -385,14 +385,21 @@ button {
 }
 
 .signin-btn {
-  padding: 16px 24px;
-  background-color: var(--green);
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  color: var(--white);
-  border-radius: 8px;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
   list-style-type: none;
+}
+.signin-btn ul li {
+  padding-left: 25px;
 }
 
 .signin-btn:hover {
@@ -529,6 +536,10 @@ a {
 @media (min-width: 1200px) {
   #mainNav ul li {
     border: none;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
     text-align: center;
   }
 }
@@ -572,8 +583,8 @@ header {
 }
 @media (min-width: 1200px) {
   header {
-    -ms-grid-columns: 25% auto 25%;
-    grid-template-columns: 25% auto 25%;
+    -ms-grid-columns: 25% auto 40%;
+    grid-template-columns: 25% auto 40%;
         grid-template-areas: "logo nav SignIn";
   }
 }

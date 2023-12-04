@@ -11,15 +11,44 @@ button{
 }
 
 .signin-btn{
-    padding: 16px 24px;
-    background-color: var(--green);
-    transition: 0.25s;
-    color: var(--white);
-    border-radius: 8px;
-   // margin-left: 350px;
+//     padding: 16px 24px;
+//     background-color: var(--green);
+//     transition: 0.25s;
+//     color: var(--white);
+//     border-radius: 8px;
+//    // margin-left: 350px;
+//     text-decoration: none;
+//     list-style-type: none;
     text-decoration: none;
-    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    list-style-type:none;
+
+    ul{
+        li{
+            padding-left: 25px;
+        }
+    }
+
 }
+
+// #double-btn{
+//     text-decoration: none;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+//     position: relative;
+//     list-style-type:none;
+
+//     ul{
+//         li{
+//             padding-left: 25px;
+//         }
+//     }
+    
+// }
 
 .signin-btn:hover{
     background-color: var(--greenLight);
