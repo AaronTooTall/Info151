@@ -66,7 +66,7 @@ a{
             justify-content: flex-end;
             align-items: center;
             display: flex;
-           // justify-content: center;
+            //justify-content: center;
             height: 100%;
         }
       
@@ -79,8 +79,8 @@ a{
 
             @include xl{
                 border: none;
-                // height: 100%;
-                // box-sizing: border-box;
+                //height: 100%;
+                //box-sizing: border-box;
                 // text-decoration: none;
                 text-align: center; 
             }

@@ -21,7 +21,7 @@ header{
     }
    
     @include xl{
-        grid-template-columns: 25% auto 40%;
+        grid-template-columns: 25% auto 30%;
         grid-template-areas:
         "logo nav signIn";
     }

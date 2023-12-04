@@ -12,6 +12,9 @@ var burgerBtn = document.querySelector("#burger-container button");
 
 var signInUpButtons = document.querySelector("#sign-in-up-buttons");
 
+var burgerBars = document.querySelector("#burger-bars");
+var burgerX = document.querySelector("#burger-x");
+
 var canYouSeeMainNav = false;
 
 //console.log(burgerBtn);
@@ -31,11 +34,18 @@ function showNav(){
         signInUpButtons.classList.add("showSignIn");
 
         canYouSeeMainNav = true;
+
+        burgerBars.classList.add("hide-burger-bars");
+
+        burgerX.classList.remove("hide-burger-x");
     }else{
-        console.log("hide menu")
+        console.log("hide menu");
         mainNav.classList.remove("showMainNav");
         //this will remove the class of showMainNav to the id mainNav
         signInUpButtons.classList.remove("showSignIn");
+        burgerBars.classList.remove("hide-burger-bars");
+
+        burgerX.classList.add("hide-burger-x");
         canYouSeeMainNav = false;
     }
     

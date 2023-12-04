@@ -342,6 +342,14 @@ template {
   display: flex !important;
 }
 
+.hide-burger-x {
+  display: none !important;
+}
+
+.hide-burger-bars {
+  display: none !important;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -385,7 +393,12 @@ button {
 }
 
 .signin-btn {
-  text-decoration: none;
+  padding: 16px 24px;
+  background-color: var(--green);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  color: var(--white);
+  border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,7 +409,6 @@ button {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
-  list-style-type: none;
 }
 .signin-btn ul li {
   padding-left: 25px;
@@ -416,7 +428,16 @@ button {
   color: var(--green);
   border-radius: 8px;
   margin-left: 20px;
-  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
 }
 
 .signup-btn:hover {
@@ -556,8 +577,8 @@ header {
 }
 @media (min-width: 1200px) {
   header {
-    -ms-grid-columns: 25% auto 40%;
-    grid-template-columns: 25% auto 40%;
+    -ms-grid-columns: 25% auto 30%;
+    grid-template-columns: 25% auto 30%;
         grid-template-areas: "logo nav signIn";
   }
 }
