@@ -37,9 +37,9 @@ a{
 
 #mainNav{
     display: none;
-    // margin-top: 12px;
-    // padding-top: 20px;
-    // border-top: 1px solid var(--gray);
+    margin-top: 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--gray);
      list-style-type:none;
 
 
@@ -53,20 +53,20 @@ a{
 
 
     ul{
-        // display: flex;
-        // flex-direction: column;
-        // text-decoration: none;
-        // text-align: right;
-        // padding: 5px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        text-align: right;
+        padding: 5px;
         list-style-type:none;
 
 
         @include xl{
-            // flex-direction: row;
-            // justify-content: flex-end;
-            // align-items: center;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
             display: flex;
-            justify-content: center;
+           // justify-content: center;
             height: 100%;
             align-items: center;
         }
