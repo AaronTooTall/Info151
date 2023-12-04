@@ -64,7 +64,8 @@ function showSignInModal(){
     //console.log("show modal now");
 
     signInContainer.classList.add("show-signIn-container");
-
+    mainNav.classList.remove("showMainNav");
+    signInUpButtons.classList.remove("showSignIn");
 }
 
 function hideSignInModal(){

@@ -337,9 +337,9 @@ template {
     Base
 ============= */
 .show-signIn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 ul {
@@ -499,17 +499,19 @@ a {
   }
 }
 #mainNav ul li a:link, #mainNav ul li a:visited {
-  padding: 10px;
+  padding: 24px;
   display: inline-block;
-  margin-bottom: 12px;
-  margin-top: 12px;
   color: var(--grey);
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  font-size: 1.125rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @media (min-width: 1200px) {
   #mainNav ul li a:link, #mainNav ul li a:visited {
-    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 }
 #mainNav ul li a:hover, #mainNav ul li a:active {
@@ -520,25 +522,25 @@ a {
     Header
 ============= */
 header {
-  padding: 5px 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-  grid-template-columns: 90% 10%;
-      grid-template-areas: "logo burger";
+  -ms-grid-columns: 50% auto;
+  grid-template-columns: 50% auto;
+      grid-template-areas: "logo burger" "nav nav" "signIn signIn";
+  height: 100%;
 }
 @media (min-width: 768px) {
   header {
-    -ms-grid-columns: 25% auto 4%;
-    grid-template-columns: 25% auto 4%;
-        grid-template-areas: "logo button burger";
+    -ms-grid-columns: 40% 50% auto;
+    grid-template-columns: 40% 50% auto;
+        grid-template-areas: "logo signIn burger" "nav nav nav";
   }
 }
 @media (min-width: 1200px) {
   header {
-    -ms-grid-columns: 25% 40% auto;
-    grid-template-columns: 25% 40% auto;
-        grid-template-areas: "logo nav button";
+    -ms-grid-columns: 25% auto 25%;
+    grid-template-columns: 25% auto 25%;
+        grid-template-areas: "logo nav SignIn";
   }
 }
 
@@ -554,12 +556,13 @@ header {
   grid-area: logo;
   padding: 24px 0 0px 24px;
   height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #burger-container {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,6 +573,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   grid-area: burger;
+  padding-top: 24px;
 }
 @media (min-width: 1200px) {
   #burger-container {
@@ -578,6 +582,9 @@ header {
 }
 
 #sign-in-up-buttons {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   display: none;
   grid-area: signIn;
   padding: 21px 24px;
@@ -609,6 +616,9 @@ header {
 }
 
 nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: nav;
 }
 
@@ -621,6 +631,16 @@ nav {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
+  #sign-in-up-buttons {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -631,6 +651,7 @@ nav {
   nav {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
   }
 }
 
