@@ -780,58 +780,16 @@ nav {
   border: 1px solid var(--white);
 }
 
-#sign-up-container {
+#sign-up {
   background-color: rgba(2, 74, 88, 0.8);
   height: 100%;
-  padding: 16px;
-  position: fixed;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
-  height: 100%;
-}
-#sign-up-container form {
-  background-color: rgba(2, 74, 88, 0.8);
-  padding: 24px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 8px;
-}
-#sign-up-container form #close-button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 24px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-#sign-up-container form input {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 60px;
-  margin-bottom: 24px;
-  border: none;
-  border-radius: 8px;
-}
-#sign-up-container form #sign-up-button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-#sign-up-container form #sign-up-button-container button {
-  background-color: var(--greenLight);
-  color: var(--white);
-  border: 1px solid var(--white);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
