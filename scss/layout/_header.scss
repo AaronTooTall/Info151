@@ -47,6 +47,7 @@ header{
     align-items: center;
     grid-area: burger;
     padding-top: 24px;
+    box-sizing: border-box;
 
     @include xl{
         display: none;
