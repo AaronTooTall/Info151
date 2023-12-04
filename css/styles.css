@@ -392,6 +392,7 @@ button {
   color: var(--white);
   border-radius: 8px;
   text-decoration: none;
+  list-style-type: none;
 }
 
 .signin-btn:hover {
@@ -408,7 +409,7 @@ button {
   color: var(--green);
   border-radius: 8px;
   margin-left: 20px;
-  text-decoration: none;
+  list-style-type: none;
 }
 
 .signup-btn:hover {
